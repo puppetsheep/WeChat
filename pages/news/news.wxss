@@ -1,0 +1,97 @@
+page {
+ height: 100%;
+}
+view , scroll-view{
+ padding: 0px;
+ margin: 0px;
+}
+.weui-navbar{
+ width: 100%;
+ position: fixed;
+ border-bottom: 1px solid #ff1100;
+ box-sizing: border-box;
+ white-space: nowrap; 
+ z-index: 100;
+ background: white;
+}
+.rec{
+ width: 100%;
+ height: 7%;
+}
+.weui-navbar .default-item{
+ /*width:25%;*/
+ display: inline-block;
+ text-align: center;
+ font-size: 32rpx;
+ box-sizing: border-box;
+ height: 7%;
+ padding-bottom: 20rpx;
+}
+.weui-navbar .item_on{
+ color: #f13016;
+}
+.weui-navbar-slider{
+ position: absolute;
+ width: 160rpx;
+ height: 2px;
+ content:"";
+ background: #ca1919;
+ bottom: 0px;
+ left: 12.5rpx;
+ transition: transform .3s;
+}
+
+.swiper-box .swiper-item{
+ text-align: center;
+ height: 100%;
+}
+.title{
+  font-size: 33rpx;
+  text-align: left;
+  color: #ff1100;  
+  text-decoration:underline;
+}
+.source{
+  text-align: left;
+  font-size: 12px;
+  color: #205bfc;
+  text-indent: 3em;
+}
+.digest{
+  text-align: left;
+  font-size: 15px;
+  color: #111111;
+  text-indent: 2em;
+}
+.ptime{
+  text-align: right;
+  font-size: 12px;
+  color: #5f5f5f;
+}
+.hr{
+  border-bottom: 1px solid #282828;
+  width: 75%;
+  margin-left: 30rpx;
+  margin-top: 15rpx;
+  margin-bottom: 10rpx;
+}
+text{
+  font-size: 12px;
+  color: #042180;
+}
+.image{
+  width: 16px;
+  float: left;
+  margin-left: 30rpx;
+  margin-top: 5rpx;
+  height: 16px;
+}
+.button{
+  width: 16px;
+  height: 10px;
+}
+.end{
+  text-align: center;
+  font-size: 12px;
+  color: #4d4d4d;
+}

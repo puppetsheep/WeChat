@@ -1,0 +1,13 @@
+
+<view class='error'>error: 因未找到资源，暂无法观看红色影视</view>
+<view class='tishi'>可点击红色书籍查看其它内容</view>
+<view>
+  <image src="../../image/ico/xuexi.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>
+  <image src="../../image/ico/zhuanti.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>
+  <image src="../../image/ico/falv.png" class="img-style" animation="{{animInput}}" bindtap="input"></image>
+  <image src="../../image/bar/class1.png" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>
+</view>
+
+
+
+

@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+    "pages/news/news",
+    "pages/class/class",
+    "pages/home/home",
+    "pages/toutiao/toutiao",
+    "pages/404/404",
+    "pages/xue/xue",
+    "pages/zhuanti/zhuanti",
+    "pages/zhengce/zhengce"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f33",
+    "navigationBarTitleText": "那一盏明灯",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff4f4",
+    "color": "#999999",
+    "selectedColor": "#ff0000",
+    "list": [{
+      "pagePath": "pages/news/news",
+      "text": "热点要闻",
+      "iconPath": "image/bar/news.png",
+      "selectedIconPath": "image/bar/news1.png"
+    },
+    {
+        "pagePath": "pages/class/class",
+        "text": "红色课堂",
+        "iconPath": "image/bar/class.png",
+      "selectedIconPath": "image/bar/class1.png"
+    },
+    {
+        "pagePath": "pages/home/home",
+        "text": "党员之家",
+        "iconPath": "image/bar/home.png",
+        "selectedIconPath": "image/bar/home1.png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "个人档案",
+      "iconPath": "image/bar/me.png",
+      "selectedIconPath": "image/bar/me1.png"
+    }]
+  }
+}

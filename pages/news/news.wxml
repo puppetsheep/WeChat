@@ -1,0 +1,42 @@
+<scroll-view scroll-x="true" class="weui-navbar">
+  <block wx:for-items="{{tabs}}">
+    <view id="{{index}}" class="{{activeIndex == index ?'item_on':''}} default-item" bindtap="tabClick" style="width:{{tabW}}px">
+      {{item}}
+    </view>
+  </block>
+  <view class="weui-navbar-slider" style="transform:translateX({{slideOffset}}px);"></view>
+</scroll-view>
+<view class="rec" />
+<swiper current="{{activeIndex}}" duration="300" style='height:{{winHeight}}px' bindchange="bindChange">
+  <swiper-item class="swiper-item">
+    <view class="slide-view">
+      <view wx:for="{{b}}" wx:for-index="idx" wx:for-item="itemName">
+        <view class='title'>{{itemName.title}}</view>
+        <view class='source'>{{itemName.source}}</view>
+         <navigator url="../toutiao/toutiao">
+         <view class='digest'>{{itemName.digest}}...
+         <text>查看详细</text>
+        </view>
+        </navigator>
+        <view class='ptime'>{{itemName.ptime}}</view>
+        <view class='hr'></view>
+      </view>
+      <view class='end'>后面就没有啦！等待明天更新吧！！</view>
+    </view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="slide-view">
+      根据法律暂无法显示
+    </view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="slide-view">
+    您暂无权限查看
+    </view>
+  </swiper-item>
+    <swiper-item class="swiper-item">
+    <view class="slide-view">
+    暂时无法收藏
+    </view>
+  </swiper-item>
+</swiper>

@@ -1,0 +1,14 @@
+/* pages/xue/xue.wxss */
+.head{
+  text-align: center;
+  font-size: 20px;
+}
+.text{
+  text-indent: 2em;
+  font-size: 17px;
+}
+.text1{
+  text-indent: 2em;
+  font-size: 18px;
+  color: rgb(252, 38, 38);
+}

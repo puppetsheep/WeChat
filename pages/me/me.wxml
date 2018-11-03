@@ -1,0 +1,57 @@
+<view class="page" bindtouchend='touchend' bindtouchstart='touchstart'>
+  <!-- 侧滑栏 -->
+  <view class="page_tab">
+    <view class="page_tab_content">
+      <navigator url="../404/404">
+        <view class="wc">
+          <image src='../../image/ico/lishi.png'></image>
+          <text>发展历程</text>
+        </view>
+      </navigator>
+      <navigator url="../404/404">
+        <view class="wc">
+          <image src='../../image/ico/dangan.png'></image>
+          <text bindtap='tosat'>党籍档案</text>
+        </view>
+      </navigator>
+      <navigator url="../404/404">
+        <view class="wc">
+          <image src='../../image/ico/institute.png'></image>
+          <text>组织关系</text>
+        </view>
+      </navigator>
+      <view class="wc">
+        <view style='position:absolute;opacity: 0;   top: 10px; '>
+          <contact-button size="27" class='pos'></contact-button>
+          <contact-button size="27" class='pos'></contact-button>
+          <contact-button size="27" class='pos'></contact-button>
+          <contact-button size="27" class='pos'></contact-button>
+          <contact-button size="27" class='pos'></contact-button>
+        </view>
+        <image src='../../image/ico/kefu.png'></image>
+        <text>客服中心</text>
+      </view>
+    </view>
+  </view>
+  <view class="bg" bindtap='hideview' style='display:{{display}}'></view>
+  <!-- 主页 -->
+  <view class="home" style="{{translate}}">
+    <image class='icon_user' bindtap='showview' src="../../image/ico/item.png"></image>
+    <view class="container">
+  <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> 
+    <!-- 主页tab -->
+    <view class='home_tab' style='margin-top: 20rpx;'>
+      <view class='page_row'>
+        <block wx:for="{{k1}}" wx:key="index">
+          <view class='title {{home_tab ==index?"on":""}}' catchtap='home_tab_click' data-id='{{item.id}}' data-on='{{index}}'>{{item.title}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
